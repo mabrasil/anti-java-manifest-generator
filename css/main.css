@@ -1,0 +1,72 @@
+/* Main Area */
+
+.main,
+.main-fluid {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .main {
+        width: 750px
+    }
+}
+@media (min-width: 992px) {
+    .main {
+        width: 970px
+    }
+}
+@media (min-width: 1200px) {
+    .main {
+        width: 1170px
+    }
+}
+
+/* Responsiveness */
+
+.content{
+    position: relative;
+    float: right;
+    width: 100%;
+}
+
+.argument{
+    width: 80%;
+    height: 250px;
+    resize: none;
+    overflow-y: scroll;
+    padding: 20px 15px 20px 20px;
+    
+}
+
+/* Heart Effect */
+
+.heart {
+    color: #c0392b;
+    display: inline-block;
+    position: relative;
+    top: .2em;
+    font-size: 1.4em;
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-animation: heart .5s infinite linear alternate-reverse;
+    -moz-animation: heart .5s infinite linear alternate-reverse;
+    animation: heart .5s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes heart {
+    to {-webkit-transform: scale(1.2);}
+}
+
+@-moz-keyframes heart {
+    to {-moz-transform: scale(1.2);}
+}
+@keyframes heart {
+    to {transform: scale(1.2);}
+}
