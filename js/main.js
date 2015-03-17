@@ -11,6 +11,9 @@ $( document ).ready(function() {
 	  argument.push('> What about the return statement which isn\'t valid within initialization blocks?');
 	  argument.push('> Remember that you can\'t create an array of a variable type new T[27] or of a parameterized type new ArrayList<String>[27]. Sorry, in Java, arrays don\'t work with generics.');
 	  argument.push('> You don\'t have something like a \'var-Keyword\' for infering local types (like you have C#).');
+	  argument.push('> It has some reserved keywords that are currently unused, such as goto and const.');
+	  argument.push('> It is overly verbose.');
+	  argument.push('> Although arrays are objects they don\'t properly implement .toString()');
 	  
     function shuffle(array) {
       var currentIndex = array.length, temporaryValue, randomIndex ;
